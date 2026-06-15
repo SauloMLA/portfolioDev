@@ -1,36 +1,322 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Saulo Alaniz — Portfolio
 
-## Getting Started
+Personal brand site for Saulo Alaniz, Software Engineer building AI, web, mobile, and full-stack products.
 
-First, run the development server:
+Live → sauloalaniz.dev
 
-```bash
+
+
+What this is
+
+Not a template dump. A single-page portfolio designed to feel like a product — dark, minimal, fast — with real case studies, production experience, and embedded product demos.
+
+Built to answer three questions in under 60 seconds:
+
+
+
+
+
+Who is Saulo? — name-first branding, clear positioning
+
+
+
+What has he shipped? — 4 real products with live links and demos
+
+
+
+Where has he worked? — Paystand, Whipple Studio, Guía de Hoy
+
+
+
+Highlights
+
+
+
+
+
+Premium dark UI — fixed grid background, subtle depth, no visual noise
+
+
+
+Bilingual — EN / ES toggle with full content swap (not just labels)
+
+
+
+Product case studies — problem → solution → impact format
+
+
+
+In-site demo player — YouTube embeds in a modal, no redirect
+
+
+
+Clickable project previews — open live product or play demo from the image
+
+
+
+SEO ready — metadata, Open Graph image, sitemap.xml, robots.txt
+
+
+
+Type-safe content — all copy lives in typed locale files
+
+
+
+Featured products
+
+
+
+
+
+
+
+Product
+
+
+
+Live
+
+
+
+Repo
+
+
+
+
+
+EcoSort AI
+
+
+
+ecosortai-landing.vercel.app
+
+
+
+ecoSortAI
+
+
+
+
+
+Grupo Agaváceas
+
+
+
+grupo-agavaceas.vercel.app
+
+
+
+grupo-agavaceas
+
+
+
+
+
+ServiMotos
+
+
+
+Demo only
+
+
+
+punto-de-venta
+
+
+
+
+
+Passly Cashier
+
+
+
+Demo only
+
+
+
+passly_cashier
+
+
+
+Stack
+
+
+
+
+
+
+
+Layer
+
+
+
+Tech
+
+
+
+
+
+Framework
+
+
+
+Next.js 16 (App Router)
+
+
+
+
+
+Language
+
+
+
+TypeScript
+
+
+
+
+
+Styling
+
+
+
+Tailwind CSS v4
+
+
+
+
+
+UI
+
+
+
+shadcn/ui + Base UI
+
+
+
+
+
+Motion
+
+
+
+Framer Motion
+
+
+
+
+
+Icons
+
+
+
+Lucide
+
+
+
+
+
+Font
+
+
+
+Geist
+
+
+
+
+
+Deploy
+
+
+
+Vercel
+
+
+
+Quick start
+
+git clone https://github.com/SauloMLA/porfolio.git
+cd porfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+npm run dev      # local development
+npm run build    # production build
+npm run start    # run production server
+npm run lint     # eslint
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Project structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+src/
+├── app/                    # layout, globals, SEO routes
+├── components/
+│   ├── sections/           # Hero, Projects, Experience, etc.
+│   ├── layout/             # Navbar, Footer
+│   └── ui/                 # Button, Badge, toggles
+├── content/
+│   ├── en.ts               # English copy (edit here)
+│   └── es.ts               # Spanish copy (edit here)
+└── lib/
+    ├── i18n/               # types + locale provider
+    └── video.ts            # YouTube embed helpers
 
-## Deploy on Vercel
+public/
+└── projects/               # project screenshots
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Edit content
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All visible text is in:
+
+
+
+
+
+src/content/en.ts
+
+
+
+src/content/es.ts
+
+To add a project, update both files and drop an image in public/projects/.
+
+
+
+Deploy
+
+Optimized for Vercel — connect the GitHub repo and deploy. No environment variables required.
+
+npm run build   # must pass before pushing
+git push        # Vercel auto-deploys on push to main
+
+
+
+Contact
+
+
+
+
+
+GitHub — SauloMLA
+
+
+
+LinkedIn — saulomarioalanizleon
+
+
+
+Email — marioalaniz04@gmail.com
+
+
+
+Location — Guadalajara, Mexico
+
+
+
+Built by Saulo Alaniz.
