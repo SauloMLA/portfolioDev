@@ -3,22 +3,22 @@ import type { SiteContent } from "@/lib/i18n/types";
 export const es: SiteContent = {
   site: {
     name: "Saulo Alaniz",
-    title: "Ingeniero de Software & Creador",
+    title: "Ingeniero de Software & Consultor Freelance",
     url: "https://sauloalaniz.dev",
     description:
-      "Saulo Alaniz — Creador, inventor e ingeniero full-stack de IA, web y móvil que construye productos listos para producción. Actualmente en Paystand.",
+      "Saulo Alaniz — Creador, inventor e ingeniero full-stack de IA, web y móvil que construye productos listos para producción.",
     location: "Guadalajara, México",
-    currentCompany: "Paystand",
+    currentCompany: "Freelance",
   },
   hero: {
     positioning:
-      "Creador, inventor e ingeniero full-stack que diseña sistemas inteligentes, plataformas fintech y soluciones para producción.",
+      "Creador, inventor e ingeniero full-stack que diseña sistemas inteligentes, plataformas fintech y software a la medida.",
     currentRole:
-      "Pasante de IA/ML en Paystand — productos full-stack internos, arquitectura de sistemas y herramientas operativas.",
+      "Ingeniero de Software Freelance & Consultor Tecnológico — construyendo plataformas web, sistemas de IA y aplicaciones móviles.",
     context: [
-      { label: "Actualmente en Paystand" },
+      { label: "Disponible para Freelance / Proyectos" },
       { label: "Con base en Guadalajara, México" },
-      { label: "Fintech · IA · Web · Móvil · Mecatrónica" },
+      { label: "Next.js · NestJS · React Native · Flutter · IA" },
     ],
     metrics: [
       { value: "3+", label: "Años lanzando productos" },
@@ -38,10 +38,11 @@ export const es: SiteContent = {
     { label: "Contacto", href: "#contact" },
   ],
   whatIBuild: {
-    label: "Capacidades & Especialidades",
+    label: "Capacidades & Tecnologías",
     title: "Fintech, IA, web, móvil y mecatrónica",
     subtitle:
       "Un creador e inventor que diseña en todo el stack — desde plataformas SaaS financieras hasta visión por computadora e ingeniería mecatrónica.",
+    techTitle: "Stack de Tecnologías & Herramientas",
     items: [
       {
         title: "Plataformas Fintech & SaaS",
@@ -68,6 +69,28 @@ export const es: SiteContent = {
         icon: "Cpu",
       },
     ],
+    techCategories: [
+      {
+        category: "Frontend & UI",
+        skills: ["React 19", "Next.js 15", "TypeScript", "Tailwind CSS", "Framer Motion", "HTML5/CSS3", "Zustand / Redux"],
+      },
+      {
+        category: "Backend & APIs",
+        skills: ["NestJS", "Node.js", "Express", "Python", "Fastify", "REST APIs", "GraphQL", "Swagger/OpenAPI"],
+      },
+      {
+        category: "Bases de Datos & Cloud",
+        skills: ["PostgreSQL", "Neon DB", "Prisma ORM", "MongoDB", "Redis", "Docker", "Vercel", "Railway"],
+      },
+      {
+        category: "Móvil & Multiplataforma",
+        skills: ["React Native", "Flutter", "Swift", "SwiftUI", "iOS Native", "Dart"],
+      },
+      {
+        category: "IA, Visión & Mecatrónica",
+        skills: ["OpenAI API", "TensorFlow Lite", "OpenCV", "Raspberry Pi", "Microcontroladores", "C/C++"],
+      },
+    ],
   },
   experience: {
     label: "Experiencia",
@@ -79,6 +102,29 @@ export const es: SiteContent = {
     items: [
       {
         period: "2026 — Presente",
+        company: "Freelance & Consultoría",
+        role: "Ingeniero de Software Independiente",
+        summary:
+          "Desarrollo de software a la medida, arquitectura de sistemas y consultoría en IA/Fintech.",
+        technologies: [
+          "Next.js",
+          "NestJS",
+          "TypeScript",
+          "React Native",
+          "Flutter",
+          "Python",
+        ],
+        impact:
+          "Diseño y ejecuto arquitecturas full-stack a la medida para clientes en México y EE.UU., integrando IA y fintech.",
+        highlights: [
+          "Desarrollo de aplicaciones web y móviles de alto rendimiento.",
+          "Consultoría en arquitectura de software, CI/CD y despliegues en producción.",
+        ],
+        logo: { initials: "FL", accent: "from-sky-500/30 to-indigo-500/20" },
+        featured: true,
+      },
+      {
+        period: "2024 — 2025",
         company: "Paystand",
         role: "Pasante IA/ML",
         summary:
@@ -91,13 +137,13 @@ export const es: SiteContent = {
           "Python",
         ],
         impact:
-          "Construyo herramientas full-stack internas y software operativo con React, Next.js, TypeScript y Python.",
+          "Construí herramientas full-stack internas y software operativo con React, Next.js, TypeScript y Python.",
         highlights: [
           "Colaboración entre equipos en soluciones de software internas.",
           "Desarrollo de funcionalidades, pruebas y mejoras de producto.",
         ],
         logo: { initials: "P", accent: "from-blue-500/30 to-indigo-500/20" },
-        featured: true,
+        featured: false,
       },
       {
         period: "2022 — 2025",
@@ -146,11 +192,13 @@ export const es: SiteContent = {
     watchDemoLabel: "Ver demo",
     closeDemoLabel: "Cerrar demo",
     demoUnavailableLabel: "Demo no disponible.",
-    sourceLabel: "Código",
+    sourceLabel: "Código Fuente",
+    repoFrontLabel: "Repo Frontend",
+    repoBackLabel: "Repo Backend",
     items: [
       {
         slug: "factorcore",
-        title: "FactorCore v2.0",
+        title: "FactorCore",
         tags: ["Fintech", "SaaS Multi-tenant", "Clean Architecture", "Full-Stack"],
         problem:
           "Las empresas de factoraje financiero enfrentan riesgos operativos críticos por falta de validación de aforos en tiempo real, cálculos manuales de comisiones, falta de auditoría de accesos y dispersión de expedientes de clientes.",
@@ -173,6 +221,8 @@ export const es: SiteContent = {
         liveUrl: "https://factorx-frontend.vercel.app/",
         demoUrl: null,
         githubUrl: "https://github.com/SauloMLA/factorx-frontend",
+        frontendGithubUrl: "https://github.com/SauloMLA/factorx-frontend",
+        backendGithubUrl: "https://github.com/SauloMLA/capitalx-factorcore",
         image: "/projects/factorcore.png",
         gradient: "from-blue-600/30 via-indigo-500/20 to-cyan-400/30",
       },
@@ -277,7 +327,7 @@ export const es: SiteContent = {
     label: "Filosofía de Invención",
     title: "Cómo creo e invento",
     lead: "No construyo demos superfluas. Invento sistemas reales para problemas complejos.",
-    body: "Cada producto que entrego — desde la plataforma Fintech FactorCore v2.0 hasta herramientas de IA en Paystand o prototipos mecatrónicos — está diseñado con pensamiento de primer principio, arquitectura limpia y ejecución robusta para producción.",
+    body: "Cada producto que entrego — desde la plataforma Fintech FactorCore hasta herramientas de IA o prototipos mecatrónicos — está diseñado con pensamiento de primer principio, arquitectura limpia y ejecución robusta para producción.",
     principles: [
       {
         title: "Pensamiento de Creador & Producto",
@@ -300,7 +350,7 @@ export const es: SiteContent = {
     label: "Contacto",
     title: "Creemos algo extraordinario",
     subtitle:
-      "Abierto a roles de ingeniería de software e invención tecnológica — Fintech, IA, full-stack, web y móvil.",
+      "Abierto a proyectos independientes, consultoría y roles de ingeniería de software.",
     links: [
       {
         label: "Email",

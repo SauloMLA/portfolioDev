@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, GitBranch, Play, Sparkles, Code2, Layers } from "lucide-react";
+import { ExternalLink, GitBranch, Play, Sparkles, Server, Code } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -255,21 +255,58 @@ export function FeaturedProjects() {
                           <Play className="size-3.5 ml-1" />
                         </Button>
                       )}
-                      <Button
-                        asChild
-                        variant="outline"
-                        size="sm"
-                        className="h-10 rounded-xl border-slate-700 bg-slate-900/60 hover:bg-slate-800 text-slate-300 hover:text-white"
-                      >
-                        <Link
-                          href={project.githubUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
+
+                      {/* Repos Frontend / Backend separados o único repo */}
+                      {project.frontendGithubUrl && project.backendGithubUrl ? (
+                        <>
+                          <Button
+                            asChild
+                            variant="outline"
+                            size="sm"
+                            className="h-10 rounded-xl border-sky-500/30 bg-slate-900/60 hover:bg-slate-800 text-sky-300 hover:text-white"
+                          >
+                            <Link
+                              href={project.frontendGithubUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <Code className="size-3.5 mr-1" />
+                              {projects.repoFrontLabel || "Repo Front"}
+                            </Link>
+                          </Button>
+                          <Button
+                            asChild
+                            variant="outline"
+                            size="sm"
+                            className="h-10 rounded-xl border-indigo-500/30 bg-slate-900/60 hover:bg-slate-800 text-indigo-300 hover:text-white"
+                          >
+                            <Link
+                              href={project.backendGithubUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <Server className="size-3.5 mr-1" />
+                              {projects.repoBackLabel || "Repo Back"}
+                            </Link>
+                          </Button>
+                        </>
+                      ) : (
+                        <Button
+                          asChild
+                          variant="outline"
+                          size="sm"
+                          className="h-10 rounded-xl border-slate-700 bg-slate-900/60 hover:bg-slate-800 text-slate-300 hover:text-white"
                         >
-                          {projects.sourceLabel}
-                          <GitBranch className="size-3.5 ml-1" />
-                        </Link>
-                      </Button>
+                          <Link
+                            href={project.githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {projects.sourceLabel}
+                            <GitBranch className="size-3.5 ml-1" />
+                          </Link>
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </article>

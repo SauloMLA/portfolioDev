@@ -3,22 +3,22 @@ import type { SiteContent } from "@/lib/i18n/types";
 export const en: SiteContent = {
   site: {
     name: "Saulo Alaniz",
-    title: "Software Engineer & Creator",
+    title: "Software Engineer & Tech Consultant",
     url: "https://sauloalaniz.dev",
     description:
-      "Saulo Alaniz — Creator, inventor & full-stack AI, web, and mobile engineer building production-grade software platforms. Currently at Paystand.",
+      "Saulo Alaniz — Creator, inventor & full-stack AI, web, and mobile engineer building production-grade software platforms.",
     location: "Guadalajara, Mexico",
-    currentCompany: "Paystand",
+    currentCompany: "Freelance",
   },
   hero: {
     positioning:
-      "Creator, inventor, and full-stack engineer crafting intelligent systems, fintech platforms, and production-grade software.",
+      "Creator, inventor, and full-stack engineer crafting intelligent systems, fintech platforms, and custom software.",
     currentRole:
-      "AI/ML Intern at Paystand — internal full-stack products, systems architecture, and operational tooling.",
+      "Freelance Software Engineer & Tech Consultant — building custom web platforms, AI systems, and mobile apps.",
     context: [
-      { label: "Currently at Paystand" },
+      { label: "Available for Freelance / Contracts" },
       { label: "Based in Guadalajara, Mexico" },
-      { label: "Fintech · AI · Web · Mobile · Mechatronics" },
+      { label: "Next.js · NestJS · React Native · Flutter · AI" },
     ],
     metrics: [
       { value: "3+", label: "Years launching products" },
@@ -38,10 +38,11 @@ export const en: SiteContent = {
     { label: "Contact", href: "#contact" },
   ],
   whatIBuild: {
-    label: "Capabilities & Specialties",
+    label: "Capabilities & Tech Stack",
     title: "Fintech, AI, web, mobile & mechatronics",
     subtitle:
       "A creator and inventor engineering across the entire stack — from financial SaaS engines to edge computer vision and mechatronics systems.",
+    techTitle: "Technologies & Tooling Ecosystem",
     items: [
       {
         title: "Fintech & SaaS Platforms",
@@ -68,6 +69,28 @@ export const en: SiteContent = {
         icon: "Cpu",
       },
     ],
+    techCategories: [
+      {
+        category: "Frontend & UI",
+        skills: ["React 19", "Next.js 15", "TypeScript", "Tailwind CSS", "Framer Motion", "HTML5/CSS3", "Zustand / Redux"],
+      },
+      {
+        category: "Backend & APIs",
+        skills: ["NestJS", "Node.js", "Express", "Python", "Fastify", "REST APIs", "GraphQL", "Swagger/OpenAPI"],
+      },
+      {
+        category: "Databases & Cloud",
+        skills: ["PostgreSQL", "Neon DB", "Prisma ORM", "MongoDB", "Redis", "Docker", "Vercel", "Railway"],
+      },
+      {
+        category: "Mobile & Cross-Platform",
+        skills: ["React Native", "Flutter", "Swift", "SwiftUI", "iOS Native", "Dart"],
+      },
+      {
+        category: "AI, Vision & Mechatronics",
+        skills: ["OpenAI API", "TensorFlow Lite", "OpenCV", "Raspberry Pi", "Microcontrollers", "C/C++"],
+      },
+    ],
   },
   experience: {
     label: "Experience",
@@ -79,6 +102,29 @@ export const en: SiteContent = {
     items: [
       {
         period: "2026 — Present",
+        company: "Freelance & Consulting",
+        role: "Independent Software Engineer",
+        summary:
+          "Custom software development, systems architecture, and AI/Fintech consulting.",
+        technologies: [
+          "Next.js",
+          "NestJS",
+          "TypeScript",
+          "React Native",
+          "Flutter",
+          "Python",
+        ],
+        impact:
+          "Architecting and delivering custom full-stack solutions for clients across US and LatAm markets.",
+        highlights: [
+          "High-performance web and mobile product development.",
+          "Software architecture consulting, CI/CD pipelines, and production deployments.",
+        ],
+        logo: { initials: "FL", accent: "from-sky-500/30 to-indigo-500/20" },
+        featured: true,
+      },
+      {
+        period: "2024 — 2025",
         company: "Paystand",
         role: "AI/ML Intern",
         summary:
@@ -91,13 +137,13 @@ export const en: SiteContent = {
           "Python",
         ],
         impact:
-          "Building internal full-stack tools and operational software using React, Next.js, TypeScript, and Python.",
+          "Built internal full-stack tools and operational software using React, Next.js, TypeScript, and Python.",
         highlights: [
           "Cross-team collaboration on internal software solutions.",
           "Feature development, testing, and product improvements.",
         ],
         logo: { initials: "P", accent: "from-blue-500/30 to-indigo-500/20" },
-        featured: true,
+        featured: false,
       },
       {
         period: "2022 — 2025",
@@ -147,10 +193,12 @@ export const en: SiteContent = {
     closeDemoLabel: "Close demo",
     demoUnavailableLabel: "Demo unavailable.",
     sourceLabel: "Source Code",
+    repoFrontLabel: "Frontend Repo",
+    repoBackLabel: "Backend Repo",
     items: [
       {
         slug: "factorcore",
-        title: "FactorCore v2.0",
+        title: "FactorCore",
         tags: ["Fintech", "SaaS Multi-tenant", "Clean Architecture", "Full-Stack"],
         problem:
           "Financial factoring companies face critical operational risks due to lack of real-time advance validation, manual fee calculations, unaudited user access, and scattered client dossier records.",
@@ -173,6 +221,8 @@ export const en: SiteContent = {
         liveUrl: "https://factorx-frontend.vercel.app/",
         demoUrl: null,
         githubUrl: "https://github.com/SauloMLA/factorx-frontend",
+        frontendGithubUrl: "https://github.com/SauloMLA/factorx-frontend",
+        backendGithubUrl: "https://github.com/SauloMLA/capitalx-factorcore",
         image: "/projects/factorcore.png",
         gradient: "from-blue-600/30 via-indigo-500/20 to-cyan-400/30",
       },
@@ -277,7 +327,7 @@ export const en: SiteContent = {
     label: "Philosophy of Invention",
     title: "How I Create & Invent",
     lead: "I don't build toy projects. I invent real systems for complex problems.",
-    body: "Every product I ship — from FactorCore v2.0 fintech platform to AI operational tools at Paystand or mechatronic prototypes — is engineered from first principles with clean architecture and production robustness.",
+    body: "Every product I ship — from FactorCore fintech platform to AI operational tools or mechatronic prototypes — is engineered from first principles with clean architecture and production robustness.",
     principles: [
       {
         title: "Creator & Product-First Mindset",
@@ -300,7 +350,7 @@ export const en: SiteContent = {
     label: "Contact",
     title: "Let's build something extraordinary",
     subtitle:
-      "Open to software engineering & technological invention roles — Fintech, AI, full-stack, web, and mobile.",
+      "Open to freelance contracts, software consulting, and engineering projects.",
     links: [
       {
         label: "Email",

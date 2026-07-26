@@ -1,5 +1,10 @@
 export type Locale = "en" | "es";
 
+export type TechCategory = {
+  category: string;
+  skills: string[];
+};
+
 export type SiteContent = {
   site: {
     name: string;
@@ -24,11 +29,13 @@ export type SiteContent = {
     label: string;
     title: string;
     subtitle: string;
+    techTitle?: string;
     items: {
       title: string;
       description: string;
       icon: "Globe" | "Smartphone" | "Brain" | "Cpu";
     }[];
+    techCategories?: TechCategory[];
   };
   experience: {
     label: string;
@@ -61,6 +68,8 @@ export type SiteContent = {
     closeDemoLabel: string;
     demoUnavailableLabel: string;
     sourceLabel: string;
+    repoFrontLabel?: string;
+    repoBackLabel?: string;
     items: {
       slug: string;
       title: string;
@@ -73,6 +82,8 @@ export type SiteContent = {
       liveUrl: string;
       demoUrl: string | null;
       githubUrl: string;
+      frontendGithubUrl?: string;
+      backendGithubUrl?: string;
       gradient: string;
     }[];
   };
