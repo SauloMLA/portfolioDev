@@ -3,32 +3,32 @@ import type { SiteContent } from "@/lib/i18n/types";
 export const en: SiteContent = {
   site: {
     name: "Saulo Alaniz",
-    title: "Software Engineer",
+    title: "Software Engineer & Creator",
     url: "https://sauloalaniz.dev",
     description:
-      "Saulo Alaniz — AI, web, mobile, and full-stack developer building production-ready products. Currently at Paystand.",
+      "Saulo Alaniz — Creator, inventor & full-stack AI, web, and mobile engineer building production-grade software platforms. Currently at Paystand.",
     location: "Guadalajara, Mexico",
     currentCompany: "Paystand",
   },
   hero: {
     positioning:
-      "AI, web, mobile, and full-stack developer building production-ready products.",
+      "Creator, inventor, and full-stack engineer crafting intelligent systems, fintech platforms, and production-grade software.",
     currentRole:
-      "AI/ML Intern at Paystand — internal full-stack products and operational tools.",
+      "AI/ML Intern at Paystand — internal full-stack products, systems architecture, and operational tooling.",
     context: [
       { label: "Currently at Paystand" },
       { label: "Based in Guadalajara, Mexico" },
-      { label: "React · Next.js · React Native · Flutter · AI" },
+      { label: "Fintech · AI · Web · Mobile · Mechatronics" },
     ],
     metrics: [
-      { value: "3+", label: "Years shipping products" },
-      { value: "4", label: "Products built" },
-      { value: "3", label: "Production companies" },
-      { value: "AI + Web + Mobile", label: "Full-stack engineer" },
+      { value: "3+", label: "Years launching products" },
+      { value: "5", label: "Production products" },
+      { value: "3", label: "Companies in production" },
+      { value: "Full-Stack + AI", label: "Systems Architect" },
     ],
     ctas: {
-      primary: { label: "View Products", href: "#projects" },
-      secondary: { label: "Get in Touch", href: "#contact" },
+      primary: { label: "Explore products", href: "#projects" },
+      secondary: { label: "Get in touch", href: "#contact" },
     },
   },
   navigation: [
@@ -38,42 +38,42 @@ export const en: SiteContent = {
     { label: "Contact", href: "#contact" },
   ],
   whatIBuild: {
-    label: "Capabilities",
-    title: "AI, web, mobile, and full-stack",
+    label: "Capabilities & Specialties",
+    title: "Fintech, AI, web, mobile & mechatronics",
     subtitle:
-      "A software engineer who ships across the stack — not a specialist in one layer.",
+      "A creator and inventor engineering across the entire stack — from financial SaaS engines to edge computer vision and mechatronics systems.",
     items: [
       {
-        title: "Modern Web Applications",
+        title: "Fintech & SaaS Platforms",
         description:
-          "React, Next.js, and TypeScript interfaces built for performance, scale, and production reliability.",
+          "Clean Architecture & BFF patterns in Next.js and NestJS for factoring engines, real-time fees, and immutable audit ledgers.",
         icon: "Globe",
       },
       {
-        title: "Mobile Products",
+        title: "AI & Edge Systems",
         description:
-          "React Native and Flutter apps with production-ready UX and cross-platform architecture.",
-        icon: "Smartphone",
-      },
-      {
-        title: "AI-Powered Systems",
-        description:
-          "OpenAI integrations, automation workflows, and intelligent features embedded in real products.",
+          "TensorFlow Lite models, edge computing on Raspberry Pi, and real-time computer vision deployment pipelines.",
         icon: "Brain",
       },
       {
-        title: "Engineering Beyond Software",
+        title: "Cross-Platform Mobile Products",
         description:
-          "Mechatronics background — embedded systems, control systems, and hardware-software integration.",
+          "React Native and Flutter applications focused on enterprise user experience and field operation workflows.",
+        icon: "Smartphone",
+      },
+      {
+        title: "Mechatronics & Hardware Systems",
+        description:
+          "Mechatronics engineering background — integrating microcontrollers, sensors, and low-level operational software.",
         icon: "Cpu",
       },
     ],
   },
   experience: {
     label: "Experience",
-    title: "Production experience",
+    title: "Production Experience",
     subtitle:
-      "Real companies. Real products. Impact across AI, web, mobile, and full-stack systems.",
+      "Real companies. Real products. Real impact across AI, fintech, web, mobile, and hardware systems.",
     currentBadge: "Current",
     impactLabel: "Impact",
     items: [
@@ -82,7 +82,7 @@ export const en: SiteContent = {
         company: "Paystand",
         role: "AI/ML Intern",
         summary:
-          "Internal full-stack products and operational tools across Paystand.",
+          "Internal full-stack products and operational tooling at Paystand.",
         technologies: [
           "React",
           "Next.js",
@@ -91,10 +91,10 @@ export const en: SiteContent = {
           "Python",
         ],
         impact:
-          "Building internal full-stack tools and operational software with React, Next.js, TypeScript, and Python.",
+          "Building internal full-stack tools and operational software using React, Next.js, TypeScript, and Python.",
         highlights: [
           "Cross-team collaboration on internal software solutions.",
-          "Feature development, testing, and product enhancements.",
+          "Feature development, testing, and product improvements.",
         ],
         logo: { initials: "P", accent: "from-blue-500/30 to-indigo-500/20" },
         featured: true,
@@ -102,15 +102,15 @@ export const en: SiteContent = {
       {
         period: "2022 — 2025",
         company: "Whipple Studio",
-        role: "Application Developer",
+        role: "App Developer",
         summary:
-          "Full-stack product development across native iOS and modern React web apps.",
+          "Full-stack product development in native iOS and React web applications.",
         technologies: ["Swift", "SwiftUI", "React", "Next.js", "TypeScript"],
         impact:
-          "Shipped cross-platform products spanning native iOS and React/Next.js web applications.",
+          "Delivered cross-platform products across native iOS and React/Next.js applications.",
         highlights: [
           "Refactored production iOS apps with Swift and SwiftUI.",
-          "Built and delivered React and Next.js web products.",
+          "Built and launched web products with React and Next.js.",
         ],
         logo: { initials: "W", accent: "from-blue-500/30 to-sky-500/20" },
         featured: false,
@@ -123,10 +123,10 @@ export const en: SiteContent = {
           "Frontend architecture and delivery for a production media platform.",
         technologies: ["React", "Next.js", "TypeScript", "REST APIs"],
         impact:
-          "Owned frontend architecture for a media platform serving thousands of daily readers.",
+          "Led frontend architecture for a media platform serving thousands of daily readers.",
         highlights: [
           "Built production React/Next.js interfaces and API integrations.",
-          "Improved engagement and conversion-focused UX flows.",
+          "Improved UX flows focused on engagement and conversion.",
         ],
         logo: { initials: "G", accent: "from-emerald-500/30 to-teal-500/20" },
         featured: false,
@@ -135,10 +135,10 @@ export const en: SiteContent = {
   },
   projects: {
     label: "Products",
-    title: "Products I've built",
+    title: "Systems & Products I've Created",
     subtitle:
-      "Startup-style case studies — real problems, real solutions, real engineering.",
-    caseStudyBadge: "Product case study",
+      "Production-ready case studies — fintech engines, edge AI, mobile apps, and high-performance web platforms.",
+    caseStudyBadge: "Case Study",
     problemLabel: "Problem",
     solutionLabel: "Solution",
     impactLabel: "Impact",
@@ -146,8 +146,36 @@ export const en: SiteContent = {
     watchDemoLabel: "Watch Demo",
     closeDemoLabel: "Close demo",
     demoUnavailableLabel: "Demo unavailable.",
-    sourceLabel: "Source",
+    sourceLabel: "Source Code",
     items: [
+      {
+        slug: "factorcore",
+        title: "FactorCore v2.0",
+        tags: ["Fintech", "SaaS Multi-tenant", "Clean Architecture", "Full-Stack"],
+        problem:
+          "Financial factoring companies face critical operational risks due to lack of real-time advance validation, manual fee calculations, unaudited user access, and scattered client dossier records.",
+        solution:
+          "Designed and engineered a multi-tenant SaaS factoring origination platform built with Clean Architecture and Backend-for-Frontend (BFF) patterns using Next.js 15 and NestJS. Features a business rule engine for advances (85%) and fees (1.5%), an immutable cryptographic audit ledger, JWT role-based access control (Control Desk / Operator), Neon PostgreSQL persistence via Prisma ORM, and full dynamic i18n (ES/EN).",
+        impact:
+          "100% automated origination and credit rights assignment workflow, completely eliminating calculation errors and delivering enterprise cryptographic auditability for all production transactions.",
+        stack: [
+          "Next.js 15",
+          "React 19",
+          "NestJS",
+          "TypeScript",
+          "Prisma ORM",
+          "PostgreSQL (Neon)",
+          "Tailwind CSS",
+          "Docker",
+          "Zod",
+          "JWT",
+        ],
+        liveUrl: "https://factorx-frontend.vercel.app/",
+        demoUrl: null,
+        githubUrl: "https://github.com/SauloMLA/factorx-frontend",
+        image: "/projects/factorcore.png",
+        gradient: "from-blue-600/30 via-indigo-500/20 to-cyan-400/30",
+      },
       {
         slug: "ecosort-ai",
         title: "EcoSort AI",
@@ -178,11 +206,11 @@ export const en: SiteContent = {
         title: "Grupo Agaváceas",
         tags: ["Web", "B2B", "Enterprise"],
         problem:
-          "Agricultural companies in the tequila value chain often struggle to communicate professionalism, operational maturity, and technological capabilities through outdated websites — creating credibility challenges with producers, distilleries, and enterprise clients.",
+          "Agricultural enterprises in the tequila value chain struggle to communicate operational maturity and technological capabilities through outdated web portals.",
         solution:
-          "Designed and developed a premium corporate platform that positions Grupo Agaváceas as a strategic partner. Built a luxury landing experience with enterprise-style service architecture, traceability-focused storytelling, interactive process visualization, Framer Motion animations, and SEO optimization.",
+          "Designed and built a premium corporate platform positioning Grupo Agaváceas as an enterprise strategic partner with interactive process visualizers and Framer Motion animations.",
         impact:
-          "Complete modernization of brand perception with stronger commercial positioning, improved communication of agricultural operations, and an enterprise-grade user experience now live in production.",
+          "Complete brand perception overhaul with stronger commercial positioning and enterprise-level user experience in production.",
         stack: [
           "Next.js",
           "TypeScript",
@@ -201,11 +229,11 @@ export const en: SiteContent = {
         title: "ServiMotos",
         tags: ["Mobile", "Operations", "Cross-Platform"],
         problem:
-          "Motorcycle retail and service operations frequently rely on spreadsheets, messaging apps, and manual coordination between stores, supervisors, and field technicians — leading to poor visibility and fragmented workflows.",
+          "Motorcycle sales and service operations rely on spreadsheets and manual messaging between stores, supervisors, and field technicians.",
         solution:
-          "Developed a role-based cross-platform operations platform with Flutter supporting web, mobile, and desktop. Built authentication workflows, operational dashboards, service order management, technician assignment, VIN verification, evidence capture, and API integration with a mock backend for demos.",
+          "Engineered a cross-platform operations platform with Flutter for web, mobile, and desktop with work order management, technician assignment, VIN verification, and API integration.",
         impact:
-          "Centralized operational workflows with reduced coordination complexity, demonstrating scalable cross-platform architecture ready for future production backend integration.",
+          "Centralized operational workflows with lower coordination complexity, demonstrating scalable multi-platform architecture ready for backend integration.",
         stack: [
           "Flutter",
           "Dart",
@@ -224,11 +252,11 @@ export const en: SiteContent = {
         title: "Passly Cashier",
         tags: ["Mobile", "Loyalty", "Product"],
         problem:
-          "Businesses running loyalty programs struggle with manual visit validation, duplicated transactions, and inconsistent reward tracking — increasing friction at checkout and creating registration errors.",
+          "Businesses with loyalty programs struggle with manual visit validation and duplicate transaction tracking.",
         solution:
-          "Built a cross-platform Flutter app for cashiers to validate visits via QR, PDF417 barcodes, or manual code entry. Implemented secure authentication, reward unlocking workflows, idempotent transaction processing, and mock/production API modes with feature-based architecture.",
+          "Built a cross-platform app with Flutter for cashiers to validate visits via QR, PDF417 codes, or manual entry with idempotent processing.",
         impact:
-          "Reduced manual validation errors, prevented duplicate reward registrations, and improved cashier workflow efficiency with production-oriented mobile architecture ready to scale.",
+          "Reduced manual validation errors and prevented duplicate records with cashier-focused mobile architecture.",
         stack: [
           "Flutter",
           "Dart",
@@ -246,33 +274,33 @@ export const en: SiteContent = {
     ],
   },
   philosophy: {
-    label: "Philosophy",
-    title: "How I build",
-    lead: "I don't build demo projects. I build products people actually use.",
-    body: "Every system I ship — whether it's internal tooling at Paystand, a React dashboard, or a mobile app — is designed to solve a real problem, perform under load, and hold up in production.",
+    label: "Philosophy of Invention",
+    title: "How I Create & Invent",
+    lead: "I don't build toy projects. I invent real systems for complex problems.",
+    body: "Every product I ship — from FactorCore v2.0 fintech platform to AI operational tools at Paystand or mechatronic prototypes — is engineered from first principles with clean architecture and production robustness.",
     principles: [
       {
-        title: "Product thinking first",
+        title: "Creator & Product-First Mindset",
         description:
-          "Engineering decisions start with the user and the business outcome — not the technology trend.",
+          "Engineering decisions start with understanding real user impact and inventing the optimal technical workflow.",
       },
       {
-        title: "Ship, then refine",
+        title: "Ship & Evolve in Production",
         description:
-          "Working software in production beats perfect architecture in a README.",
+          "A working production system with scalable architecture beats any perfect README specification.",
       },
       {
-        title: "Full-stack ownership",
+        title: "Multidisciplinary Full-Stack Ownership",
         description:
-          "From AI integrations to mobile UX to backend APIs — I build across the entire product surface.",
+          "From AI models and financial algorithms to mobile apps, responsive frontends, and hardware integration.",
       },
     ],
   },
   contact: {
     label: "Contact",
-    title: "Work with me",
+    title: "Let's build something extraordinary",
     subtitle:
-      "Open to software engineering roles — AI, full-stack, web, and mobile.",
+      "Open to software engineering & technological invention roles — Fintech, AI, full-stack, web, and mobile.",
     links: [
       {
         label: "Email",

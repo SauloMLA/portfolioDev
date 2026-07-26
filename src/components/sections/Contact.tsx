@@ -12,7 +12,7 @@ export function Contact() {
   const { contact } = useContent();
 
   return (
-    <section id="contact" className="section-padding pb-0">
+    <section id="contact" className="section-padding pb-0 relative">
       <div className="mx-auto max-w-6xl px-6">
         <ScrollReveal>
           <SectionHeader
@@ -26,7 +26,7 @@ export function Contact() {
 
         <ScrollReveal delay={0.1}>
           <div className="mx-auto max-w-lg">
-            <ul className="card-surface divide-y divide-border rounded-xl">
+            <ul className="glass divide-y divide-sky-500/15 rounded-2xl overflow-hidden border border-sky-500/20 shadow-xl">
               {contact.links.map((link) => (
                 <li key={link.label}>
                   {link.href ? (
@@ -40,25 +40,25 @@ export function Contact() {
                           ? "noopener noreferrer"
                           : undefined
                       }
-                      className="group flex items-center justify-between px-6 py-5 transition-colors duration-300 hover:bg-[rgba(255,255,255,0.03)]"
+                      className="group flex items-center justify-between px-6 py-5 transition-colors duration-300 hover:bg-sky-500/10"
                     >
                       <div>
-                        <p className="text-xs text-subtle">
+                        <p className="text-xs font-mono text-sky-400 font-semibold">
                           {link.label}
                         </p>
-                        <p className="mt-0.5 text-sm text-foreground transition-colors group-hover:text-[var(--accent-blue)] group-hover:underline">
+                        <p className="mt-0.5 text-sm font-medium text-white transition-colors group-hover:text-sky-300">
                           {link.value}
                         </p>
                       </div>
-                      <ArrowUpRight className="size-4 text-[var(--text-secondary)] transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--accent-blue)]" />
+                      <ArrowUpRight className="size-4 text-slate-400 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-sky-300" />
                     </Link>
                   ) : (
                     <div className="flex items-center justify-between px-6 py-5">
                       <div>
-                        <p className="text-xs text-muted-foreground">
+                        <p className="text-xs font-mono text-slate-400">
                           {link.label}
                         </p>
-                        <p className="mt-0.5 text-sm text-foreground">
+                        <p className="mt-0.5 text-sm font-medium text-slate-200">
                           {link.value}
                         </p>
                       </div>

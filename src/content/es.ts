@@ -3,31 +3,31 @@ import type { SiteContent } from "@/lib/i18n/types";
 export const es: SiteContent = {
   site: {
     name: "Saulo Alaniz",
-    title: "Ingeniero de Software",
+    title: "Ingeniero de Software & Creador",
     url: "https://sauloalaniz.dev",
     description:
-      "Saulo Alaniz — Desarrollador de IA, web, móvil y full-stack que construye productos listos para producción. Actualmente en Paystand.",
+      "Saulo Alaniz — Creador, inventor e ingeniero full-stack de IA, web y móvil que construye productos listos para producción. Actualmente en Paystand.",
     location: "Guadalajara, México",
     currentCompany: "Paystand",
   },
   hero: {
     positioning:
-      "Desarrollador de IA, web, móvil y full-stack que construye productos listos para producción.",
+      "Creador, inventor e ingeniero full-stack que diseña sistemas inteligentes, plataformas fintech y soluciones para producción.",
     currentRole:
-      "Pasante de IA/ML en Paystand — productos full-stack internos y herramientas operativas.",
+      "Pasante de IA/ML en Paystand — productos full-stack internos, arquitectura de sistemas y herramientas operativas.",
     context: [
       { label: "Actualmente en Paystand" },
       { label: "Con base en Guadalajara, México" },
-      { label: "React · Next.js · React Native · Flutter · IA" },
+      { label: "Fintech · IA · Web · Móvil · Mecatrónica" },
     ],
     metrics: [
       { value: "3+", label: "Años lanzando productos" },
-      { value: "4", label: "Productos construidos" },
+      { value: "5", label: "Productos de producción" },
       { value: "3", label: "Empresas en producción" },
-      { value: "IA + Web + Móvil", label: "Ingeniero full-stack" },
+      { value: "Full-Stack + IA", label: "Arquitecto de sistemas" },
     ],
     ctas: {
-      primary: { label: "Ver productos", href: "#projects" },
+      primary: { label: "Explorar productos", href: "#projects" },
       secondary: { label: "Contactar", href: "#contact" },
     },
   },
@@ -38,42 +38,42 @@ export const es: SiteContent = {
     { label: "Contacto", href: "#contact" },
   ],
   whatIBuild: {
-    label: "Capacidades",
-    title: "IA, web, móvil y full-stack",
+    label: "Capacidades & Especialidades",
+    title: "Fintech, IA, web, móvil y mecatrónica",
     subtitle:
-      "Un ingeniero de software que entrega en todo el stack — no un especialista en una sola capa.",
+      "Un creador e inventor que diseña en todo el stack — desde plataformas SaaS financieras hasta visión por computadora e ingeniería mecatrónica.",
     items: [
       {
-        title: "Aplicaciones Web Modernas",
+        title: "Plataformas Fintech & SaaS",
         description:
-          "Interfaces con React, Next.js y TypeScript diseñadas para rendimiento, escala y confiabilidad en producción.",
+          "Arquitectura Clean & BFF en Next.js y NestJS para motores de factoraje, comisiones en tiempo real y bitácoras de auditoría inmutables.",
         icon: "Globe",
       },
       {
-        title: "Productos Móviles",
+        title: "Sistemas con IA & Edge",
         description:
-          "Apps con React Native y Flutter con UX lista para producción y arquitectura multiplataforma.",
-        icon: "Smartphone",
-      },
-      {
-        title: "Sistemas con IA",
-        description:
-          "Integraciones con OpenAI, flujos de automatización y funciones inteligentes en productos reales.",
+          "Modelos TensorFlow Lite, computación en el borde con Raspberry Pi y soluciones de visión artificial en tiempo real.",
         icon: "Brain",
       },
       {
-        title: "Ingeniería Más Allá del Software",
+        title: "Productos Móviles Multiplataforma",
         description:
-          "Formación en mecatrónica — sistemas embebidos, control y integración hardware-software.",
+          "Aplicaciones con React Native y Flutter enfocadas en experiencia de usuario enterprise y operaciones en campo.",
+        icon: "Smartphone",
+      },
+      {
+        title: "Mecatrónica & Sistemas Hardware",
+        description:
+          "Formación en ingeniería mecatrónica — integrando microcontroladores, sensores y software operativo de bajo nivel.",
         icon: "Cpu",
       },
     ],
   },
   experience: {
     label: "Experiencia",
-    title: "Experiencia en producción",
+    title: "Trayectoria en producción",
     subtitle:
-      "Empresas reales. Productos reales. Impacto en IA, web, móvil y sistemas full-stack.",
+      "Empresas reales. Productos reales. Impacto en IA, fintech, web, móvil y sistemas mecatrónicos.",
     currentBadge: "Actual",
     impactLabel: "Impacto",
     items: [
@@ -135,9 +135,9 @@ export const es: SiteContent = {
   },
   projects: {
     label: "Productos",
-    title: "Productos que he construido",
+    title: "Sistemas & Productos que he creado",
     subtitle:
-      "Casos de estudio al estilo startup — problemas reales, soluciones reales, ingeniería real.",
+      "Soluciones con arquitectura lista para producción — fintech, IA en el borde, aplicaciones móviles y web de alto nivel.",
     caseStudyBadge: "Caso de estudio",
     problemLabel: "Problema",
     solutionLabel: "Solución",
@@ -148,6 +148,34 @@ export const es: SiteContent = {
     demoUnavailableLabel: "Demo no disponible.",
     sourceLabel: "Código",
     items: [
+      {
+        slug: "factorcore",
+        title: "FactorCore v2.0",
+        tags: ["Fintech", "SaaS Multi-tenant", "Clean Architecture", "Full-Stack"],
+        problem:
+          "Las empresas de factoraje financiero enfrentan riesgos operativos críticos por falta de validación de aforos en tiempo real, cálculos manuales de comisiones, falta de auditoría de accesos y dispersión de expedientes de clientes.",
+        solution:
+          "Diseñé y desarrollé una plataforma SaaS multi-inquilino de originación de factoraje estructurada con Clean Architecture y Backend-for-Frontend (BFF) en Next.js 15 y NestJS. Incluye motor de reglas de negocio para aforos (85%) y comisiones (1.5%), bitácora de auditoría inmutable criptográfica, autenticación JWT con control de roles (Mesa de Control / Operador), persistencia en Neon PostgreSQL mediante Prisma ORM y soporte i18n dinámico (ES/EN).",
+        impact:
+          "Automatización completa del flujo de originación y cesión de derechos de crédito, eliminando el 100% de errores de cálculo en comisiones y garantizando la auditabilidad criptográfica de cada transacción en producción.",
+        stack: [
+          "Next.js 15",
+          "React 19",
+          "NestJS",
+          "TypeScript",
+          "Prisma ORM",
+          "PostgreSQL (Neon)",
+          "Tailwind CSS",
+          "Docker",
+          "Zod",
+          "JWT",
+        ],
+        liveUrl: "https://factorx-frontend.vercel.app/",
+        demoUrl: null,
+        githubUrl: "https://github.com/SauloMLA/factorx-frontend",
+        image: "/projects/factorcore.png",
+        gradient: "from-blue-600/30 via-indigo-500/20 to-cyan-400/30",
+      },
       {
         slug: "ecosort-ai",
         title: "EcoSort AI",
@@ -246,33 +274,33 @@ export const es: SiteContent = {
     ],
   },
   philosophy: {
-    label: "Filosofía",
-    title: "Cómo construyo",
-    lead: "No construyo proyectos demo. Construyo productos que la gente realmente usa.",
-    body: "Cada sistema que entrego — ya sea herramientas internas en Paystand, un dashboard en React o una app móvil — está diseñado para resolver un problema real, rendir bajo carga y sostenerse en producción.",
+    label: "Filosofía de Invención",
+    title: "Cómo creo e invento",
+    lead: "No construyo demos superfluas. Invento sistemas reales para problemas complejos.",
+    body: "Cada producto que entrego — desde la plataforma Fintech FactorCore v2.0 hasta herramientas de IA en Paystand o prototipos mecatrónicos — está diseñado con pensamiento de primer principio, arquitectura limpia y ejecución robusta para producción.",
     principles: [
       {
-        title: "Product thinking primero",
+        title: "Pensamiento de Creador & Producto",
         description:
-          "Las decisiones de ingeniería empiezan con el usuario y el resultado de negocio — no con la tendencia tecnológica.",
+          "Las decisiones de ingeniería nacen de entender el impacto real en el usuario y la invención del mejor flujo técnico.",
       },
       {
-        title: "Entregar, luego refinar",
+        title: "Entregar & Evolucionar en Producción",
         description:
-          "Software funcionando en producción supera una arquitectura perfecta en un README.",
+          "Un sistema funcional en producción con arquitectura escalable supera cualquier especificación en papel.",
       },
       {
-        title: "Ownership full-stack",
+        title: "Dominio Multidisciplinario Full-Stack",
         description:
-          "Desde integraciones de IA hasta UX móvil y APIs backend — construyo en toda la superficie del producto.",
+          "Desde modelos de IA y algoritmos financieros hasta apps móviles, frontend receptivo e integración hardware.",
       },
     ],
   },
   contact: {
     label: "Contacto",
-    title: "Trabajemos juntos",
+    title: "Creemos algo extraordinario",
     subtitle:
-      "Abierto a roles de ingeniería de software — IA, full-stack, web y móvil.",
+      "Abierto a roles de ingeniería de software e invención tecnológica — Fintech, IA, full-stack, web y móvil.",
     links: [
       {
         label: "Email",

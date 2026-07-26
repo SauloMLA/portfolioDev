@@ -52,44 +52,44 @@
 }
 
 :root {
-  --text-primary: #f5f5f7;
-  --text-secondary: #b8b8c0;
-  --text-muted: #85858f;
-  --accent-blue: #8eb4d4;
-  --accent-blue-soft: rgba(142, 180, 212, 0.07);
-  --accent-blue-border: rgba(142, 180, 212, 0.14);
-  --background: #0a0a0a;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --accent-blue: #38bdf8;
+  --accent-blue-soft: rgba(56, 189, 248, 0.08);
+  --accent-blue-border: rgba(56, 189, 248, 0.2);
+  --background: #060913;
   --foreground: var(--text-primary);
-  --card: #111111;
+  --card: rgba(13, 19, 34, 0.75);
   --card-foreground: var(--text-primary);
-  --popover: #111111;
+  --popover: #0f172a;
   --popover-foreground: var(--text-primary);
   --primary: var(--text-primary);
-  --primary-foreground: #0a0a0a;
-  --secondary: #1c1c1f;
+  --primary-foreground: #060913;
+  --secondary: #1e293b;
   --secondary-foreground: var(--text-primary);
-  --muted: #1c1c1f;
+  --muted: #1e293b;
   --muted-foreground: var(--text-secondary);
   --accent: var(--accent-blue-soft);
   --accent-foreground: var(--accent-blue);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: rgba(255, 255, 255, 0.12);
-  --input: rgba(255, 255, 255, 0.1);
-  --ring: rgba(142, 180, 212, 0.25);
+  --border: rgba(56, 189, 248, 0.15);
+  --input: rgba(255, 255, 255, 0.08);
+  --ring: rgba(56, 189, 248, 0.4);
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
-  --radius: 0.75rem;
-  --sidebar: #111111;
+  --radius: 1rem;
+  --sidebar: #0b1120;
   --sidebar-foreground: var(--text-primary);
   --sidebar-primary: var(--text-primary);
-  --sidebar-primary-foreground: #0a0a0a;
-  --sidebar-accent: #1c1c1f;
+  --sidebar-primary-foreground: #060913;
+  --sidebar-accent: #1e293b;
   --sidebar-accent-foreground: var(--text-primary);
-  --sidebar-border: rgba(255, 255, 255, 0.1);
-  --sidebar-ring: rgba(142, 180, 212, 0.25);
+  --sidebar-border: rgba(56, 189, 248, 0.15);
+  --sidebar-ring: rgba(56, 189, 248, 0.4);
 }
 
 @layer base {
@@ -99,90 +99,105 @@
 
   html {
     @apply scroll-smooth font-sans;
-    background-color: #0a0a0a;
+    background-color: #060913;
   }
 
   body {
-    @apply text-foreground antialiased;
+    @apply text-foreground antialiased selection:bg-sky-500/30 selection:text-sky-200;
     min-height: 100%;
-    background-color: transparent;
+    background-color: #060913;
   }
 
+  /* Fondo dinámico de inventor con luces de gradiente ambiental */
   body::before {
     content: "";
     position: fixed;
     inset: 0;
     pointer-events: none;
     z-index: 0;
-    background-color: #0a0a0a;
+    background-color: #060913;
     background-image:
+      radial-gradient(circle at 15% 15%, rgba(56, 189, 248, 0.08) 0%, transparent 45%),
+      radial-gradient(circle at 85% 25%, rgba(99, 102, 241, 0.07) 0%, transparent 50%),
+      radial-gradient(circle at 50% 75%, rgba(16, 185, 129, 0.05) 0%, transparent 50%),
       linear-gradient(
         to right,
-        rgba(255, 255, 255, 0.018) 1px,
+        rgba(255, 255, 255, 0.02) 1px,
         transparent 1px
       ),
       linear-gradient(
         to bottom,
-        rgba(255, 255, 255, 0.018) 1px,
+        rgba(255, 255, 255, 0.02) 1px,
         transparent 1px
       );
-    background-size: 80px 80px;
+    background-size: 100% 100%, 100% 100%, 100% 100%, 64px 64px, 64px 64px;
     background-attachment: fixed;
   }
 
   body::after {
     content: "";
     position: fixed;
-    inset: 0;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 600px;
     pointer-events: none;
     z-index: 0;
     background: radial-gradient(
-      ellipse 100% 60% at 50% -20%,
-      rgba(255, 255, 255, 0.02),
-      transparent 55%
+      ellipse 80% 50% at 50% -10%,
+      rgba(56, 189, 248, 0.15),
+      rgba(99, 102, 241, 0.08) 40%,
+      transparent 70%
     );
-    background-attachment: fixed;
   }
 
   main,
   section {
+    position: relative;
+    z-index: 1;
     background: transparent;
   }
 }
 
 @layer utilities {
   .glass {
-    @apply border border-border/60 bg-card/50 backdrop-blur-md transition-all duration-300;
+    @apply border border-sky-500/20 bg-[#0d1322]/80 backdrop-blur-xl transition-all duration-300 shadow-lg shadow-black/40;
   }
 
   .glass-interactive {
-    @apply hover:border-[rgba(255,255,255,0.18)] hover:bg-[rgba(255,255,255,0.04)];
+    @apply hover:border-sky-400/40 hover:bg-[#11182c]/90 hover:shadow-[0_0_30px_rgba(56,189,248,0.15)] hover:-translate-y-1;
   }
 
   .card-surface {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    @apply transition-all duration-300;
+    background: rgba(13, 19, 34, 0.7);
+    border: 1px solid rgba(56, 189, 248, 0.15);
+    backdrop-filter: blur(12px);
+    @apply transition-all duration-300 shadow-md;
   }
 
   .card-surface-interactive {
-    @apply hover:-translate-y-0.5 hover:border-[rgba(255,255,255,0.14)];
+    @apply hover:-translate-y-1 hover:border-sky-400/40 hover:shadow-[0_0_25px_rgba(56,189,248,0.15)];
   }
 
   .pill-accent {
-    @apply border border-border/60 bg-card text-foreground/85;
+    @apply border border-sky-500/20 bg-sky-500/10 text-sky-300 shadow-xs;
   }
 
   .label-accent {
-    @apply font-mono text-sm text-[var(--accent-blue)];
+    @apply font-mono text-sm text-sky-400 tracking-tight;
   }
 
   .text-subtle {
     color: var(--text-muted);
   }
 
-  .glow-hero {
-    display: none;
+  .gradient-text-sky {
+    @apply bg-gradient-to-r from-white via-sky-200 to-indigo-300 bg-clip-text text-transparent;
+  }
+
+  .gradient-text-creator {
+    @apply bg-gradient-to-r from-sky-400 via-indigo-300 to-emerald-400 bg-clip-text text-transparent;
   }
 
   .section-padding {

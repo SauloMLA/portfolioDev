@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -35,16 +35,19 @@ export function Navbar() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
         scrolled
-          ? "border-b border-border/60 bg-background/80 backdrop-blur-md"
+          ? "border-b border-sky-500/20 bg-[#060913]/85 backdrop-blur-xl shadow-lg shadow-black/50"
           : "bg-transparent"
       )}
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link
           href="#"
-          className="text-sm font-semibold tracking-tight text-foreground transition-opacity hover:opacity-80"
+          className="flex items-center gap-2 text-sm font-bold tracking-tight text-white transition-opacity hover:opacity-80"
         >
-          {site.name}
+          <div className="flex size-7 items-center justify-center rounded-lg bg-gradient-to-tr from-sky-500 to-indigo-600 text-white font-mono text-xs font-black shadow-md shadow-sky-500/20 border border-sky-400/40">
+            SA
+          </div>
+          <span className="font-mono">{site.name}</span>
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">
@@ -52,7 +55,7 @@ export function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--accent-blue)]"
+              className="text-xs font-mono font-medium text-slate-300 transition-colors hover:text-sky-400"
             >
               {item.label}
             </Link>
@@ -61,7 +64,7 @@ export function Navbar() {
 
         <div className="hidden items-center gap-3 md:flex">
           <LanguageToggle />
-          <Button asChild size="sm" className="h-9 px-4">
+          <Button asChild size="sm" className="h-9 px-4 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-semibold shadow-md shadow-sky-500/20">
             <Link href={hero.ctas.primary.href}>{hero.ctas.primary.label}</Link>
           </Button>
         </div>
@@ -70,7 +73,7 @@ export function Navbar() {
           <LanguageToggle />
           <button
             type="button"
-            className="inline-flex size-9 items-center justify-center rounded-lg border border-border/50 text-foreground"
+            className="inline-flex size-9 items-center justify-center rounded-lg border border-sky-500/20 bg-slate-900/60 text-white"
             onClick={() => setMobileOpen((open) => !open)}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
           >
@@ -92,20 +95,20 @@ export function Navbar() {
               prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: -8 }
             }
             transition={{ duration: 0.2 }}
-            className="border-b border-border/50 bg-background/95 backdrop-blur-md md:hidden"
+            className="border-b border-sky-500/20 bg-[#060913]/95 backdrop-blur-xl md:hidden"
           >
             <div className="flex flex-col gap-1 px-6 py-4">
               {navigation.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="rounded-lg px-3 py-2.5 text-sm text-[var(--text-secondary)] transition-colors hover:bg-[rgba(255,255,255,0.04)] hover:text-[var(--accent-blue)]"
+                  className="rounded-lg px-3 py-2.5 font-mono text-xs font-medium text-slate-300 transition-colors hover:bg-sky-500/10 hover:text-sky-400"
                   onClick={() => setMobileOpen(false)}
                 >
                   {item.label}
                 </Link>
               ))}
-              <Button asChild className="mt-2 w-full" size="sm">
+              <Button asChild className="mt-2 w-full rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-semibold shadow-md" size="sm">
                 <Link
                   href={hero.ctas.primary.href}
                   onClick={() => setMobileOpen(false)}
