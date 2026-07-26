@@ -69,7 +69,7 @@ export function WhatIBuild() {
               <div className="mb-10 text-center">
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-400/30 text-indigo-300 text-xs font-mono font-semibold tracking-wider mb-3">
                   <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
-                  <span>HERRAMIENTAS & LENGUAJES</span>
+                  <span>{whatIBuild.toolsBadge || "TOOLS & LANGUAGES"}</span>
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
                   {whatIBuild.techTitle || "Stack de Tecnologías & Dominio Técnico"}

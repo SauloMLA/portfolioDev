@@ -42,6 +42,7 @@ export const es: SiteContent = {
     subtitle:
       "Un creador e inventor que diseña en todo el stack — desde plataformas SaaS financieras hasta visión por computadora e ingeniería mecatrónica.",
     techTitle: "Stack de Tecnologías & Herramientas",
+    toolsBadge: "HERRAMIENTAS & LENGUAJES",
     items: [
       {
         title: "Plataformas Fintech & SaaS",

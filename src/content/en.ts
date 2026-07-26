@@ -42,6 +42,7 @@ export const en: SiteContent = {
     subtitle:
       "A creator and inventor engineering across the entire stack — from financial SaaS engines to edge computer vision and mechatronics systems.",
     techTitle: "Technologies & Tooling Ecosystem",
+    toolsBadge: "TOOLS & LANGUAGES",
     items: [
       {
         title: "Fintech & SaaS Platforms",

@@ -30,6 +30,7 @@ export type SiteContent = {
     title: string;
     subtitle: string;
     techTitle?: string;
+    toolsBadge?: string;
     items: {
       title: string;
       description: string;
