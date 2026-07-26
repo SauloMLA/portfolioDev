@@ -3,20 +3,19 @@ import type { SiteContent } from "@/lib/i18n/types";
 export const en: SiteContent = {
   site: {
     name: "Saulo Alaniz",
-    title: "Software Engineer & Tech Consultant",
+    title: "Software Engineer & Creator",
     url: "https://sauloalaniz.dev",
     description:
       "Saulo Alaniz — Creator, inventor & full-stack AI, web, and mobile engineer building production-grade software platforms.",
     location: "Guadalajara, Mexico",
-    currentCompany: "Freelance",
+    currentCompany: "Paystand",
   },
   hero: {
     positioning:
       "Creator, inventor, and full-stack engineer crafting intelligent systems, fintech platforms, and custom software.",
     currentRole:
-      "Freelance Software Engineer & Tech Consultant — building custom web platforms, AI systems, and mobile apps.",
+      "Full-stack & AI software engineer — building web platforms, AI systems, and mobile applications.",
     context: [
-      { label: "Available for Freelance / Contracts" },
       { label: "Based in Guadalajara, Mexico" },
       { label: "Next.js · NestJS · React Native · Flutter · AI" },
     ],
@@ -97,32 +96,9 @@ export const en: SiteContent = {
     title: "Production Experience",
     subtitle:
       "Real companies. Real products. Real impact across AI, fintech, web, mobile, and hardware systems.",
-    currentBadge: "Current",
+    currentBadge: "Recent",
     impactLabel: "Impact",
     items: [
-      {
-        period: "2026 — Present",
-        company: "Freelance & Consulting",
-        role: "Independent Software Engineer",
-        summary:
-          "Custom software development, systems architecture, and AI/Fintech consulting.",
-        technologies: [
-          "Next.js",
-          "NestJS",
-          "TypeScript",
-          "React Native",
-          "Flutter",
-          "Python",
-        ],
-        impact:
-          "Architecting and delivering custom full-stack solutions for clients across US and LatAm markets.",
-        highlights: [
-          "High-performance web and mobile product development.",
-          "Software architecture consulting, CI/CD pipelines, and production deployments.",
-        ],
-        logo: { initials: "FL", accent: "from-sky-500/30 to-indigo-500/20" },
-        featured: true,
-      },
       {
         period: "2024 — 2025",
         company: "Paystand",
@@ -143,7 +119,7 @@ export const en: SiteContent = {
           "Feature development, testing, and product improvements.",
         ],
         logo: { initials: "P", accent: "from-blue-500/30 to-indigo-500/20" },
-        featured: false,
+        featured: true,
       },
       {
         period: "2022 — 2025",
@@ -350,7 +326,7 @@ export const en: SiteContent = {
     label: "Contact",
     title: "Let's build something extraordinary",
     subtitle:
-      "Open to freelance contracts, software consulting, and engineering projects.",
+      "Open to software engineering projects, systems architecture, and technology collaboration.",
     links: [
       {
         label: "Email",

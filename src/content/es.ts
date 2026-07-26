@@ -3,20 +3,19 @@ import type { SiteContent } from "@/lib/i18n/types";
 export const es: SiteContent = {
   site: {
     name: "Saulo Alaniz",
-    title: "Ingeniero de Software & Consultor Freelance",
+    title: "Ingeniero de Software & Creador",
     url: "https://sauloalaniz.dev",
     description:
       "Saulo Alaniz — Creador, inventor e ingeniero full-stack de IA, web y móvil que construye productos listos para producción.",
     location: "Guadalajara, México",
-    currentCompany: "Freelance",
+    currentCompany: "Paystand",
   },
   hero: {
     positioning:
       "Creador, inventor e ingeniero full-stack que diseña sistemas inteligentes, plataformas fintech y software a la medida.",
     currentRole:
-      "Ingeniero de Software Freelance & Consultor Tecnológico — construyendo plataformas web, sistemas de IA y aplicaciones móviles.",
+      "Desarrollador de software full-stack e IA — construyendo plataformas web, sistemas de IA y aplicaciones móviles.",
     context: [
-      { label: "Disponible para Freelance / Proyectos" },
       { label: "Con base en Guadalajara, México" },
       { label: "Next.js · NestJS · React Native · Flutter · IA" },
     ],
@@ -97,32 +96,9 @@ export const es: SiteContent = {
     title: "Trayectoria en producción",
     subtitle:
       "Empresas reales. Productos reales. Impacto en IA, fintech, web, móvil y sistemas mecatrónicos.",
-    currentBadge: "Actual",
+    currentBadge: "Reciente",
     impactLabel: "Impacto",
     items: [
-      {
-        period: "2026 — Presente",
-        company: "Freelance & Consultoría",
-        role: "Ingeniero de Software Independiente",
-        summary:
-          "Desarrollo de software a la medida, arquitectura de sistemas y consultoría en IA/Fintech.",
-        technologies: [
-          "Next.js",
-          "NestJS",
-          "TypeScript",
-          "React Native",
-          "Flutter",
-          "Python",
-        ],
-        impact:
-          "Diseño y ejecuto arquitecturas full-stack a la medida para clientes en México y EE.UU., integrando IA y fintech.",
-        highlights: [
-          "Desarrollo de aplicaciones web y móviles de alto rendimiento.",
-          "Consultoría en arquitectura de software, CI/CD y despliegues en producción.",
-        ],
-        logo: { initials: "FL", accent: "from-sky-500/30 to-indigo-500/20" },
-        featured: true,
-      },
       {
         period: "2024 — 2025",
         company: "Paystand",
@@ -143,7 +119,7 @@ export const es: SiteContent = {
           "Desarrollo de funcionalidades, pruebas y mejoras de producto.",
         ],
         logo: { initials: "P", accent: "from-blue-500/30 to-indigo-500/20" },
-        featured: false,
+        featured: true,
       },
       {
         period: "2022 — 2025",
@@ -350,7 +326,7 @@ export const es: SiteContent = {
     label: "Contacto",
     title: "Creemos algo extraordinario",
     subtitle:
-      "Abierto a proyectos independientes, consultoría y roles de ingeniería de software.",
+      "Abierto a proyectos de ingeniería de software, arquitectura de sistemas y colaboración tecnológica.",
     links: [
       {
         label: "Email",
