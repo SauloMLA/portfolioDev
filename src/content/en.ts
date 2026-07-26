@@ -200,7 +200,7 @@ export const en: SiteContent = {
         githubUrl: "https://github.com/SauloMLA/factorx-frontend",
         frontendGithubUrl: "https://github.com/SauloMLA/factorx-frontend",
         backendGithubUrl: "https://github.com/SauloMLA/capitalx-factorcore",
-        image: "/projects/factorcore.png",
+        image: "/1.png",
         gradient: "from-blue-600/30 via-indigo-500/20 to-cyan-400/30",
       },
       {
