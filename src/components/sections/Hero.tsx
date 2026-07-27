@@ -42,7 +42,7 @@ export function Hero() {
         <motion.div variants={itemVariants} className="mb-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-500/10 border border-sky-400/30 text-sky-300 text-xs font-mono font-semibold tracking-wider shadow-lg shadow-sky-500/10 backdrop-blur-md">
             <Sparkles className="w-3.5 h-3.5 text-sky-400 animate-pulse" />
-            <span>CREADOR · INVENTOR · ARQUITECTO FULL-STACK</span>
+            <span>{hero.badge || "CREATOR · INVENTOR · FULL-STACK ARCHITECT"}</span>
           </div>
         </motion.div>
 

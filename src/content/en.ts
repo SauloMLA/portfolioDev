@@ -11,6 +11,7 @@ export const en: SiteContent = {
     currentCompany: "Paystand",
   },
   hero: {
+    badge: "CREATOR · INVENTOR · FULL-STACK ARCHITECT",
     positioning:
       "Creator, inventor, and full-stack engineer crafting intelligent systems, fintech platforms, and custom software.",
     currentRole:
@@ -101,7 +102,7 @@ export const en: SiteContent = {
     impactLabel: "Impact",
     items: [
       {
-        period: "2024 — 2025",
+        period: "Jan 2026 — Jul 2026",
         company: "Paystand",
         role: "AI/ML Intern",
         summary:

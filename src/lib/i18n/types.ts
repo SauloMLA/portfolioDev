@@ -15,6 +15,7 @@ export type SiteContent = {
     currentCompany: string;
   };
   hero: {
+    badge?: string;
     positioning: string;
     currentRole: string;
     context: { label: string }[];
