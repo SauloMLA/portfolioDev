@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import { LocaleProvider } from "@/components/providers/LocaleProvider";
+import { PortfolioChatbot } from "@/components/ui/PortfolioChatbot";
 import { en } from "@/content/en";
 
 import "./globals.css";
@@ -50,7 +51,10 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
     >
       <body className="min-h-full" suppressHydrationWarning>
-        <LocaleProvider>{children}</LocaleProvider>
+        <LocaleProvider>
+          {children}
+          <PortfolioChatbot />
+        </LocaleProvider>
       </body>
     </html>
   );
